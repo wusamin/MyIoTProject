@@ -1,0 +1,64 @@
+/* 秒針の回転アニメーション */
+@keyframes rotation-s {
+    0% {transform: rotate(90deg)} /* 初期位置 0秒の位置 */
+    100% {transform: rotate(450deg)} /* 初期位置 + 360deg で一周 */
+}
+
+/* 分針の回転アニメーション */
+@keyframes rotation-m {
+    0% {transform: rotate(90deg)} /* 初期位置 0分の位置 */
+    100% {transform: rotate(450deg)} /* 初期位置 + 360deg で一周 */
+}
+
+/* 時針の回転アニメーション */
+@keyframes rotation-h {
+    0% {transform: rotate(150deg)} /* 初期位置 2時の位置 */
+    100% {transform: rotate(510deg)} /* 初期位置 + 360deg で一周 */
+}
+
+/* 時計本体 */
+#clock {
+    $size:100px;
+    height: $size; /* 高さは固定 */
+    // margin: 40px auto;
+    max-width: $size; /* 幅のレスポンシブ対応 */
+    position: relative;
+}
+
+/* 秒針 */
+#second-hand {
+    animation: rotation-s 60s linear infinite; /* 60秒かけて一周 */
+    background-color: #999;
+    border-radius: 2px;
+    height: 4px; /* 線幅 */
+    position: absolute;
+    right: calc(50% - 2px); /* 位置調整 線幅の半分ずらす */
+    top: calc(50% - 2px); /* 位置調整 線幅の半分ずらす */
+    transform-origin: calc(100% - 2px) center; /* アニメーションの中心軸 線幅の半分ずらす */
+    width: 50%;
+}
+/* 分針 */
+#minute-hand {
+    animation: rotation-m 3600s linear infinite; /* 3600秒、1時間かけて一周 */
+    background-color: #000;
+    border-radius: 5px;
+    height: 10px; /* 線幅 */
+    position: absolute;
+    right: calc(50% - 5px); /* 位置調整 線幅の半分ずらす */
+    top: calc(50% - 5px); /* 位置調整 線幅の半分ずらす */
+    transform-origin: calc(100% - 5px) center; /* アニメーションの中心軸 線幅の半分ずらす */
+    width: 40%;
+}
+
+/* 時針 */
+#hour-hand {
+    animation: rotation-h 86400s linear infinite; /* 86400秒、12時間かけて一周 */
+    background-color: #cc3b3b;
+    border-radius: 5px;
+    height: 10px; /* 線幅 */
+    position: absolute;
+    right: calc(50% - 5px); /* 位置調整 線幅の半分ずらす */
+    top: calc(50% - 5px); /* 位置調整 線幅の半分ずらす */
+    transform-origin: calc(100% - 5px) center; /* アニメーションの中心軸 線幅の半分ずらす */
+    width: 25%;
+}

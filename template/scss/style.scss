@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@import "./bootstrap/bootstrap.scss";
+@import "./bootstrap/utilities/borders";
+@import "./bootstrap/utilities/text";
+
+@import "clock";
+@import "animation";
+@import "myUtil";
+@import "weatherIcon";
+@import "character";
+
+// @import "./bootstrap/tables";
+
+// ベースかつ、非選択（サイドバーとか）の色
+$base-color: #ca9a9c;
+// $bg-color: rgba(38, 56, 89, 1);
+// アクティブな部分の背景色
+$bg-color: #f1e7e3;
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.fontsize-15 {
+    font-size: 2em;
+}
+
+.daily-text {
+    font-size: 0.8em;
+}
+
+.card-headline-text {
+    font-size: 0.7em;
+}
+
+.last-update-text {
+    font-size: 1.2em;
+}
+
+#last-update {
+    background-color: blanchedalmond;
+    z-index: 7;
+    position: fixed;
+    bottom: 5px;
+    left: 30px;
+    // width: 269px;
+    // height: 365px;
+}
+
+.bg {
+    background-size: 96px 96px;
+    background-position: right 10px bottom 10px;
+    background-repeat: no-repeat;
+    background-image: url("/images/Utsuho.gif");
+}
+
+.daily-body-text {
+    font-size: 0.85em;
+}
+
+.graph-body {
+    // height: 240px;
+}
+
+.temp-max {
+    color: #ee3400;
+}
+
+.temp-min {
+    color: #0000cc;
+}
+
+$card-head-color: #a9b6e6;
+// $card-head-color:#cad0e6;
+
+.card-headline {
+    // background-color: $card-head-color;
+    color: #1f1135;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.bg-gray {
+    /* background-color: #ece2d0; */
+    // background-color: #dddfe6;
+    background-color: $bg-color;
+}
+
+.border-unittext {
+    background-color: #1f1135;
+}
+
+.unittext-frame {
+    @extend .border-dark, .border-left, .border-bottom;
+}
+
+.unittext-body {
+    font-size: 2em;
+    @extend .text-dark, .font-weight-bold;
+}
+
+.bg-unittext {
+    // background-color: #eeeeee;
+    // border-style: solid;
+    // border-color: $card-head-color;
+    // border-radius: 10px;
+    /* border-bottom-left-radius: 10px; */
+    /* border-bottom-right-radius: 10px; */
+}
+
+.font-unittext {
+    // font-family: "Century Gothic";
+}
+
+.unittext {
+    width: 49%;
+    // color: #ffffff;
+}
+
+$icon-size: 38px;
+
+#weather-icon {
+    width: $icon-size;
+    height: $icon-size;
+}
+
+.img-size {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.img-size-home {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.btn-getvalue {
+    background: #d9cfc1;
+    color: #000000;
+    border: 3px solid #d9cfc1;
+}
+
+#kiritan {
+    z-index: 7;
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    width: 269px;
+    height: 365px;
+}
+
+@import "sidebar";
+@import "button";
+@import "weather";
+
+.table > thead > tr > th,
+.table > tbody > tr > td {
+    border: 1px solid black;
+}

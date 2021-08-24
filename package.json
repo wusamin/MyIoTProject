@@ -1,0 +1,48 @@
+{
+  "name": "maid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx webpack --watch --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wusamin/MAID.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wusamin/MAID/issues"
+  },
+  "homepage": "https://github.com/wusamin/MAID#readme",
+  "devDependencies": {
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-router-dom": "^5.1.6",
+    "css-loader": "^4.2.1",
+    "dotenv-webpack": "^7.0.3",
+    "mini-css-extract-plugin": "^0.10.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.9.9",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "description": "",
+  "dependencies": {
+    "@types/chart.js": "^2.9.21",
+    "@types/dotenv-webpack": "^7.0.2",
+    "@types/jquery": "^3.3.38",
+    "@types/reconnectingwebsocket": "^1.0.7",
+    "chart.js": "^2.9.3",
+    "dayjs": "^1.8.27",
+    "jquery": "^3.5.1",
+    "reconnectingwebsocket": "^1.0.0"
+  }
+}

@@ -1,0 +1,35 @@
+button:focus {
+    outline: 0;
+}
+
+.btn-outline-secondary:focus,
+.btn-outline-secondary.focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-outline-secondary {
+    $btn-color:#B0C2C4;
+    background: $btn-color; //ボタンの背景色
+    color: black; //ボタンのテキストの色
+    border-color: $btn-color;
+}
+
+
+.btn-outline-secondary:hover, .btn-outline-secondary:focus, 
+.btn-outline-secondary:active, .btn-outline-secondary:active:focus, .btn-outline-secondary:active:hover, .btn-outline-secondary:active.focus,
+.btn-outline-secondary.active, .btn-outline-secondary.active:focus, .btn-outline-secondary.active:hover, .btn-outline-secondary.active.focus,
+.open > .dropdown-toggle.btn-outline-secondary, 
+.open > .dropdown-toggle.btn-outline-secondary:hover,
+.open > .dropdown-toggle.btn-outline-secondary:focus, 
+.open > .dropdown-toggle.btn-outline-secondary.focus,
+.btn-outline-secondary.disabled:hover, .btn-outline-secondary[disabled]:hover, fieldset[disabled] .btn-outline-secondary:hover,
+.btn-outline-secondary.disabled:focus, .btn-outline-secondary[disabled]:focus, fieldset[disabled] .btn-outline-secondary:focus,
+.btn-outline-secondary.disabled.focus, .btn-outline-secondary[disabled].focus, fieldset[disabled] .btn-outline-secondary.focus,
+.btn-outline-secondary:not(:disabled):not(.disabled).active
+ {
+    $btn-color:#C4E4DE;
+    background: $btn-color; //ボタンの上にポインタを持ってきたり、クリックしたりした時の背景色
+    border-color:$btn-color;
+    color: black !important; //ボタンの上にポインタを持ってきたり、クリックしたりした時のテキストの色
+}

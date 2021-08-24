@@ -1,0 +1,13 @@
+{
+    "short_name": "Home Dashboard",
+    "name": "My Home Dashboard",
+    "display": "standalone",
+    "start_url": "https://wusamin.jp.ngrok.io/maid/view/dashboard",
+    "icons": [
+        {
+            "src": "/images/character/squirrel.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

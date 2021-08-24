@@ -1,0 +1,35 @@
+.sidebar {
+    background-color: $base-color;
+    min-height: 100vh;
+}
+
+.sidebar-fixed {
+    position: sticky;
+    // top: 60px;
+}
+
+.sidebar-kiritan {
+    width: 100%;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    @extend .border, .border-0;
+    background-color: transparent;
+}
+
+.sidebar-content {
+    width: 100%;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    @extend .border, .border-0;
+    background-color: transparent;
+
+    transition: all 0.4s ease;
+    &:hover {
+        // background-color: #DEB9DA;
+        background-color: $bg-color;
+    }
+}
+
+.sidebar-selected {
+    background-color: $bg-color;
+}

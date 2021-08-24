@@ -1,0 +1,43 @@
+.kiritan-standing {
+    position: fixed;
+    right: 30px;
+    bottom: 5px;
+}
+
+.speech-container {
+    position: fixed;
+    right: 270px;
+    bottom: 40px;
+}
+
+.speech-text{
+    font-size: 1.6em;
+}
+
+$speech-lect-color: #ca9a9c;
+
+.speech-bubble {
+    height: 140px;
+    width: 400px;
+    position: relative;
+    background: #e2e2e2;
+    border-color: $speech-lect-color;
+    border-style: solid;
+    border-width: 0.15em;
+    border-radius: 0.4em;
+}
+
+.speech-bubble:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 38px solid transparent;
+    border-left-color: $speech-lect-color;
+    border-right: 0;
+    border-top: 0;
+    margin-top: -19px;
+    margin-right: -40px;
+}
